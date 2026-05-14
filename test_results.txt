@@ -1,0 +1,25 @@
+
+======================================================================
+  COMPREHENSIVE PIPELINE TEST
+======================================================================
+
+Backend URL: http://localhost:5001/api
+Test Database: /Users/aryanbhutyal/prism_new/backend/sample_data/ecommerce.db
+Test started at: 2025-11-13 12:11:08
+
+======================================================================
+  1. Health Check
+======================================================================
+✅ Server is healthy: AI SQL Copilot API is running
+
+======================================================================
+  2. Database Connection
+======================================================================
+❌ Connection request failed: 400
+{
+  "message": "Connection failed: (sqlite3.OperationalError) unable to open database file\n(Background on this error at: https://sqlalche.me/e/20/e3q8)",
+  "success": false
+}
+
+
+❌ Database connection failed. Check database path.

@@ -1,0 +1,411 @@
+================================================================================
+DATABASE DATA DICTIONARY
+================================================================================
+
+Database Type: MYSQL
+Total Tables: 9
+Total Relationships: 0
+
+================================================================================
+TABLE: dvc_mst_bas
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • guid
+    Type: VARCHAR(16)
+    Constraints: NOT NULL [PRIMARY KEY]
+    Sample Values: GUID00056, GUID00085
+
+  • first_acco_reg_dt
+    Type: DATE
+    Constraints: NULL
+    Sample Values: 2022-06-04, 2021-11-15
+
+  • dvc_tp_nm
+    Type: VARCHAR(24)
+    Constraints: NULL
+    Sample Values: Smart Phone
+
+  • dvc_modl_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+    Sample Values: SM-S900U, SM-S910G
+
+  • dvc_rsp_dt
+    Type: DATE
+    Constraints: NULL
+    Sample Values: 2025-05-11, 2025-07-06
+
+  • dvc_unq_id
+    Type: VARCHAR(32)
+    Constraints: NULL
+    Sample Values: DEVUNQ51520, DEVUNQ71973
+
+  • cnty_cd
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: IND
+
+  • last_active_dt
+    Type: TIMESTAMP
+    Constraints: NULL
+    Sample Values: 2025-05-27 00:00:00, 2025-07-11 00:00:00
+
+  • marketing_name
+    Type: VARCHAR(48)
+    Constraints: NULL
+    Sample Values: Galaxy S22, Galaxy S23
+
+
+PRIMARY KEY:
+--------------------------------------------------------------------------------
+  guid
+
+ESTIMATED ROW COUNT: 2
+
+
+================================================================================
+TABLE: glr_755_ki
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • app_name
+    Type: VARCHAR(40)
+    Constraints: NULL
+    Sample Values: Gallery
+
+  • deviceid
+    Type: VARCHAR(24)
+    Constraints: NULL
+    Sample Values: DEVICE00022, DEVICE00021
+
+  • cyymmdd
+    Type: VARCHAR(16)
+    Constraints: NULL
+    Sample Values: 20241231, 20241130
+
+  • model_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+    Sample Values: SM-F731F, SM-S901B
+
+  • mcc_country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: IND
+
+  • hit_flow
+    Type: TEXT
+    Constraints: NULL
+    Sample Values: [{""hit_timestamp"": ... }]
+
+ESTIMATED ROW COUNT: 2
+
+
+================================================================================
+TABLE: glr_ki
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • app_name
+    Type: VARCHAR(40)
+    Constraints: NULL
+    Sample Values: Gallery
+
+  • deviceid
+    Type: VARCHAR(24)
+    Constraints: NULL
+    Sample Values: DEVICE00017, DEVICE00024
+
+  • cyymmdd
+    Type: VARCHAR(16)
+    Constraints: NULL
+    Sample Values: 20241218, 20250120
+
+  • model_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+    Sample Values: SM-A716G, SM-G885U
+
+  • mcc_country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: IND
+
+  • hit_flow
+    Type: TEXT
+    Constraints: NULL
+    Sample Values: [{""hit_timestamp"": ... }]
+
+ESTIMATED ROW COUNT: 2
+
+
+================================================================================
+TABLE: not_ki
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • app_name
+    Type: VARCHAR(40)
+    Constraints: NULL
+    Sample Values: Samsung Notes
+
+  • deviceid
+    Type: VARCHAR(24)
+    Constraints: NULL
+    Sample Values: DEVICE00034, DEVICE00010, DEVICE00046
+
+  • cyymmdd
+    Type: VARCHAR(16)
+    Constraints: NULL
+    Sample Values: 20250124, 20250113
+
+  • model_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+    Sample Values: SM-S918B, SM-F936G, SM-A715F
+
+  • mcc_country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: IND
+
+  • hit_flow
+    Type: TEXT
+    Constraints: NULL
+    Sample Values: [{""hit_timestamp"": ... }]
+
+ESTIMATED ROW COUNT: 3
+
+
+================================================================================
+TABLE: not_ki_helper
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • app_name
+    Type: VARCHAR(40)
+    Constraints: NULL
+
+  • deviceid
+    Type: VARCHAR(24)
+    Constraints: NULL
+
+  • cyymmdd
+    Type: VARCHAR(16)
+    Constraints: NULL
+
+  • model_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+
+  • mcc_country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+
+  • hit_flow
+    Type: TEXT
+    Constraints: NULL
+
+ESTIMATED ROW COUNT: 0
+
+
+================================================================================
+TABLE: omnitrue_raw_global
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • date
+    Type: DATE
+    Constraints: NULL
+    Sample Values: 2025-02-03, 2025-02-23
+
+  • app_name
+    Type: VARCHAR(40)
+    Constraints: NULL
+    Sample Values: Shop App
+
+  • event_name
+    Type: VARCHAR(64)
+    Constraints: NULL
+    Sample Values: order:order card:download invoice, gnb:user name
+
+  • user_status
+    Type: VARCHAR(16)
+    Constraints: NULL
+    Sample Values: guest
+
+  • prop10
+    Type: VARCHAR(24)
+    Constraints: NULL
+    Sample Values: 20250203, 20250223
+
+  • country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: usa, ind
+
+  • mccid
+    Type: VARCHAR(16)
+    Constraints: NULL
+    Sample Values: 303, 755
+
+  • post_evar31
+    Type: VARCHAR(128)
+    Constraints: NULL
+    Sample Values: 
+
+  • post_prop70
+    Type: VARCHAR(128)
+    Constraints: NULL
+    Sample Values: 
+
+  • post_evar64
+    Type: VARCHAR(128)
+    Constraints: NULL
+    Sample Values: 
+
+  • page_name
+    Type: VARCHAR(64)
+    Constraints: NULL
+    Sample Values: product_page, cart
+
+  • mcvisid
+    Type: VARCHAR(32)
+    Constraints: NULL
+    Sample Values: GUEST00069, GUEST00065
+
+ESTIMATED ROW COUNT: 2
+
+
+================================================================================
+TABLE: query_1_model
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • dvc_gp_nm
+    Type: VARCHAR(40)
+    Constraints: NULL
+    Sample Values: Galaxy A15
+
+  • dvc_modl_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+    Sample Values: SM-A155M, SM-A155N, SM-A155F, SM-A156B
+
+ESTIMATED ROW COUNT: 4
+
+
+================================================================================
+TABLE: repair_history
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • service_transaction_id
+    Type: VARCHAR(20)
+    Constraints: NOT NULL [PRIMARY KEY]
+    Sample Values: TXN00001, TXN00002, TXN00200
+
+  • repair_register_date
+    Type: DATE
+    Constraints: NULL
+    Sample Values: 2024-12-17, 2024-12-27
+
+  • country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: IND
+
+  • product_category
+    Type: VARCHAR(32)
+    Constraints: NULL
+    Sample Values: Home Appliances
+
+  • product_category_sub
+    Type: VARCHAR(32)
+    Constraints: NULL
+    Sample Values: Air Conditioner, TV, Refrigerator
+
+  • service_transaction_type
+    Type: VARCHAR(32)
+    Constraints: NULL
+    Sample Values: Repair, Service Request
+
+  • symptom_category
+    Type: VARCHAR(32)
+    Constraints: NULL
+    Sample Values: Software, Display, Connectivity
+
+  • symptom_category_sub
+    Type: VARCHAR(64)
+    Constraints: NULL
+    Sample Values: OS Crash, Cracked Screen, WiFi Issue
+
+  • repair_cost
+    Type: DECIMAL(12, 2)
+    Constraints: NULL
+    Sample Values: 2692.89, 3652.64, 4344.07
+
+
+PRIMARY KEY:
+--------------------------------------------------------------------------------
+  service_transaction_id
+
+ESTIMATED ROW COUNT: 3
+
+
+================================================================================
+TABLE: sa_log_behavior_399
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • deviceid
+    Type: VARCHAR(24)
+    Constraints: NULL
+    Sample Values: TVLRGXHRH99, TIJIC5KLTHH
+
+  • dvc_modl_id
+    Type: VARCHAR(18)
+    Constraints: NULL
+    Sample Values: SM-A156B, SM-A156W
+
+  • yymmddcrt
+    Type: VARCHAR(16)
+    Constraints: NULL
+    Sample Values: 22-06-2024, 27-11-2024
+
+  • yy_mm
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: 2024-06, 2024-11
+
+  • custom_dimension
+    Type: TEXT
+    Constraints: NULL
+    Sample Values: [{""key"":""det"",""value"":""CPH2253""}]
+
+  • country_code
+    Type: VARCHAR(8)
+    Constraints: NULL
+    Sample Values: IND
+
+  • event_name
+    Type: VARCHAR(12)
+    Constraints: NULL
+    Sample Values: 2002, 1084
+
+ESTIMATED ROW COUNT: 2
+
+
+================================================================================
+END OF DATA DICTIONARY
+================================================================================

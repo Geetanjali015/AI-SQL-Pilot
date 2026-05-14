@@ -1,0 +1,164 @@
+================================================================================
+DATABASE DATA DICTIONARY
+================================================================================
+
+Database Type: MYSQL
+Total Tables: 4
+Total Relationships: 3
+
+================================================================================
+TABLE: customers
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • customer_id
+    Type: INTEGER
+    Constraints: NOT NULL [PRIMARY KEY]
+    Sample Values: 1, 2, 3, 4, 5
+
+  • name
+    Type: VARCHAR(100)
+    Constraints: NULL
+    Sample Values: David Garcia, Kelly Smith, Tiffany Kane, Sean Kaiser, Scott Cox
+
+  • email
+    Type: VARCHAR(100)
+    Constraints: NULL
+    Sample Values: evanpollard@example.org, teresa32@example.net, lperry@example.net, nealcindy@example.org, ayalajustin@example.org
+
+  • country
+    Type: VARCHAR(50)
+    Constraints: NULL
+    Sample Values: Greece, Suriname, Croatia, United Kingdom, United Arab Emirates
+
+
+PRIMARY KEY:
+--------------------------------------------------------------------------------
+  customer_id
+
+ESTIMATED ROW COUNT: 50
+
+
+================================================================================
+TABLE: order_items
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • item_id
+    Type: INTEGER
+    Constraints: NOT NULL [PRIMARY KEY]
+    Sample Values: 10, 11, 12, 13, 14
+
+  • order_id
+    Type: INTEGER
+    Constraints: NULL
+    Sample Values: 1, 2, 3, 4, 5
+
+  • product_id
+    Type: INTEGER
+    Constraints: NULL
+    Sample Values: 1, 2, 3, 4, 5
+
+  • quantity
+    Type: INTEGER
+    Constraints: NULL
+    Sample Values: 5, 3, 1, 4, 2
+
+
+PRIMARY KEY:
+--------------------------------------------------------------------------------
+  item_id
+
+FOREIGN KEYS (RELATIONSHIPS):
+--------------------------------------------------------------------------------
+  • order_id → orders(order_id)
+  • product_id → products(product_id)
+
+ESTIMATED ROW COUNT: 336
+
+
+================================================================================
+TABLE: orders
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • order_id
+    Type: INTEGER
+    Constraints: NOT NULL [PRIMARY KEY]
+    Sample Values: 10, 75, 15, 49, 93
+
+  • customer_id
+    Type: INTEGER
+    Constraints: NULL
+    Sample Values: 1, 2, 3, 5, 6
+
+  • order_date
+    Type: DATE
+    Constraints: NULL
+    Sample Values: 2024-11-25, 2025-02-16, 2024-06-15, 2024-08-27, 2024-10-24
+
+  • total
+    Type: DECIMAL(10, 2)
+    Constraints: NULL
+    Sample Values: 2912.31, 4252.65, 4389.01, 992.90, 2950.70
+
+
+PRIMARY KEY:
+--------------------------------------------------------------------------------
+  order_id
+
+FOREIGN KEYS (RELATIONSHIPS):
+--------------------------------------------------------------------------------
+  • customer_id → customers(customer_id)
+
+ESTIMATED ROW COUNT: 100
+
+
+================================================================================
+TABLE: products
+================================================================================
+
+COLUMNS:
+--------------------------------------------------------------------------------
+  • product_id
+    Type: INTEGER
+    Constraints: NOT NULL [PRIMARY KEY]
+    Sample Values: 1, 2, 3, 4, 5
+
+  • name
+    Type: VARCHAR(100)
+    Constraints: NULL
+    Sample Values: Able Agree, Five Land, Audience Dinner, Feel Democrat, Over Wish
+
+  • category
+    Type: VARCHAR(50)
+    Constraints: NULL
+    Sample Values: Clothing, Electronics, Books, Beauty, Home
+
+  • price
+    Type: DECIMAL(10, 2)
+    Constraints: NULL
+    Sample Values: 450.46, 192.06, 359.46, 326.19, 398.75
+
+
+PRIMARY KEY:
+--------------------------------------------------------------------------------
+  product_id
+
+ESTIMATED ROW COUNT: 50
+
+
+================================================================================
+DATABASE RELATIONSHIPS SUMMARY
+================================================================================
+
+  order_items(order_id) → orders(order_id)
+  order_items(product_id) → products(product_id)
+  orders(customer_id) → customers(customer_id)
+
+================================================================================
+END OF DATA DICTIONARY
+================================================================================
