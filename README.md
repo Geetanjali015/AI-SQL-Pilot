@@ -371,20 +371,6 @@ MIT License - feel free to use this project for learning or commercial purposes.
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-
-- Support for more databases (MongoDB, MS SQL Server)
-- Query result caching
-- User authentication
-- Query history and favorites
-- Export results to CSV/JSON
-- Dark/light theme toggle
-- Multi-language support
-
----
-
 ## 📧 Support
 
 For issues and questions:
